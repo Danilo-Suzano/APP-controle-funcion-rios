@@ -1,7 +1,7 @@
 export type SpendingStorageDTO = {
-  cpf: string;
   name: string;
+  cpf: string;
   func: string;
   section: string;
   salary: string;
-};
+}

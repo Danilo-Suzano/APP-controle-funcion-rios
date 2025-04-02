@@ -1,52 +1,50 @@
+// src/components/TransactionExpenses/styles.ts
+
 import { StyleSheet } from 'react-native';
-import { colors } from '../../styles/color';
-import { fontFamily } from '../../styles/font-family';
 
 export const styles = StyleSheet.create({
   container: {
-    backgroundColor: colors.gray[300],
-    borderRadius: 8,
-    padding: 15,
-    marginBottom: 10,
-    width: '100%', 
-    alignSelf: 'center', 
+    backgroundColor: '#FFF',
+    borderRadius: 5,
+    marginBottom: 16,
+    padding: 16,
+    elevation: 2,
   },
   description: {
-    fontFamily: fontFamily.bold,
-    fontSize: 16,
-    color: colors.gray[500],
-    marginBottom: 5, 
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 4,
   },
   amount: {
-    fontFamily: fontFamily.bold,
-    fontSize: 18,
-    color: colors.gray[500],
-    marginBottom: 5, 
+    fontSize: 14,
+    marginBottom: 2,
   },
   local: {
-    fontFamily: fontFamily.regular,
     fontSize: 14,
-    color: colors.gray[500],
-    marginBottom: 5,
+    marginBottom: 8,
   },
   footer: {
-    width: '100%',
-    flexDirection: 'column',
-    alignItems: 'flex-start', 
-    marginTop: 5,
-    borderTopWidth: 1, 
-    borderTopColor: colors.gray[400],
-    paddingTop: 5, 
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 8,
   },
   category: {
     fontSize: 14,
-    fontFamily: fontFamily.bold,
-    color: colors.gray[500],
+    color: '#555',
   },
   date: {
     fontSize: 14,
-    fontFamily: fontFamily.regular,
-    color: colors.gray[500],
-    marginTop: 2,
+    color: '#888',
+  },
+  salaryInfo: {
+    marginTop: 10,
+    padding: 10,
+    backgroundColor: '#f5f5f5',
+    borderRadius: 5,
+  },
+  salaryDetail: {
+    fontSize: 14,
+    marginBottom: 4,
   }
 });

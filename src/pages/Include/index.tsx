@@ -15,7 +15,8 @@ export function Include() {
     const [salary, setSalary] = useState('');
 
     async function handleRegistration() {
-        // await AsyncStorage.clear();
+        //await AsyncStorage.clear();
+        
         alert("Registro concluído!");
 
         const data ={

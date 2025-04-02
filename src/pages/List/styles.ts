@@ -1,53 +1,55 @@
-import { StyleSheet } from "react-native";
-import { colors } from "../../styles/color";
-import { fontFamily } from "../../styles/font-family";
+
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: colors.gray[100],
-        paddingHorizontal: 20,
-        paddingVertical: 20,
-        justifyContent: 'flex-start',
+        backgroundColor: '#f0f2f5',
+        padding: 16,
+    },
+    header: {
+        alignItems: 'center',
+        marginVertical: 24,
     },
     title: {
-        fontSize: 28,
-        fontFamily: fontFamily.bold,
-        color: colors.gray[500],
-        marginBottom: 20,
+        fontSize: 24,
+        fontWeight: 'bold',
+        color: '#363f5f',
         textAlign: 'center',
     },
-    listContainer: {
-        flexGrow: 1,
-        paddingBottom: 20,  
+    filters: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginBottom: 16,
+        flexWrap: 'wrap',
     },
-    item: {
-        backgroundColor: colors.gray[300],
-        borderRadius: 8,
-        padding: 15,
-        marginBottom: 12,
-        shadowColor: colors.gray[500],
-        shadowOpacity: 0.1,
-        shadowRadius: 4,
-        elevation: 3,
-        borderWidth: 1,
-        borderColor: colors.gray[200],
+    filterButton: {
+        paddingVertical: 8,
+        paddingHorizontal: 12,
+        borderRadius: 5,
+        backgroundColor: '#e7e9ee',
+        marginBottom: 8,
     },
-    itemText: {
-        fontSize: 16,
-        fontFamily: fontFamily.regular,
-        color: colors.gray[500],
-        marginBottom: 5,
+    filterActive: {
+        backgroundColor: '#5636d3',
     },
-    itemLabel: {
-        fontSize: 18,
-        fontFamily: fontFamily.bold,
-        color: colors.gray[500],
+    filterText: {
+        fontSize: 14,
+        color: '#363f5f',
+    },
+    filterTextActive: {
+        color: '#ffffff',
     },
     transactions: {
         flex: 1,
-        width: '100%',
-        paddingHorizontal: 10,
-        marginTop: 20, 
     },
+    emptyContainer: {
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: 20,
+    },
+    emptyText: {
+        fontSize: 16,
+        color: '#888',
+    }
 });
